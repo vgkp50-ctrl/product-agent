@@ -2,6 +2,8 @@ import streamlit as st
 
 from transformers import pipeline
 from retriever import retrieve
+from dotenv import load_dotenv
+load_dotenv()
 
 @st.cache_resource
 def load_model():
